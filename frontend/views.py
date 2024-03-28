@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello User ! you are in the frontend")
+    return render(request, 'frontend/index.html')
 
 def about(request):
-    return HttpResponse("Hello User ! you are in the frontend-ABOUT SECTION")
+    return render(request, 'frontend/about.html')
